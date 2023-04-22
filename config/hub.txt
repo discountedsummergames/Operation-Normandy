@@ -37,9 +37,9 @@
 #### Actual definitions
 
 PREINFO nil
-TITLE <font color = red>Lebensraum</font>
-OOCDESC The official WW13 server, running the bleeding edge of the WW13 codebase.
+TITLE <font color = red>Operation Normandy 13</font>
+OOCDESC The continuation of Lebensraum, The Original WW13 server, running the bleeding edge of the WW13 codebase.
 ICDESC {Timeofday}, {Weather}, {Season}, Ukraine.<br>The round time is {ROUNDTIME}. Map: {Map}.
 RPLEVEL Low-Medium Roleplay
-HOSTEDBY <b>Kachnov</b>
+HOSTEDBY <b>Warfan1815</b>
 POSTINFO nil

@@ -41,6 +41,7 @@
 #include "code\__defines\mobs.dm"
 #include "code\__defines\projectile.dm"
 #include "code\__defines\respawn.dm"
+#include "code\__defines\rust_g.dm"
 #include "code\__defines\seasons.dm"
 #include "code\__defines\species_languages.dm"
 #include "code\__defines\stats.dm"
