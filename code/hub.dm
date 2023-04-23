@@ -1,5 +1,5 @@
 /world
 	hub = "Exadv1.spacestation13"
-	name = "Lebensraum"
+	name = "Operation Normandy"
 	hub_password = "kMZy3U5jJHSiBQjr"
 
