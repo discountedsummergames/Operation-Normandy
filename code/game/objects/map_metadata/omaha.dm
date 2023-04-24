@@ -26,8 +26,8 @@
 	faction_distribution_coeffs = list(USA = 0.7, GERMAN = 0.3)
 	var/modded_num_of_prisoners3 = FALSE
 	songs = list(
-		"Panzerlied" = 'sound/music/panzerlied.ogg',
-		"Blood On the Risers(Gory Gory):1" = 'sound/music/gory.ogg',
+		"COD WAW - Semper Fidelis:1" = 'sound/music/semperfi.ogg',
+		"COD WAW - Road to the Airfield:1" = 'sound/music/road.ogg',
 		)
 	meme = FALSE
 	battle_name = "Battle of Omaha Beach, D-Day"

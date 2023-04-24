@@ -28,10 +28,8 @@
 	var/modded_num_of_prisoners2 = FALSE
 	faction_distribution_coeffs = list(GERMAN = 0.3, USA = 0.70)
 	songs = list(
-		"The Great Escape:1" = 'sound/music/the_great_escape.ogg',
-		"Bridge Over the River Kwai:1" = 'sound/music/bridge_over_river_kwai.ogg',
+		"MGS4 - Midnight Shadow:1" = 'sound/music/shadow.ogg'
 		)
-
 /obj/map_metadata/stalag/germans_can_cross_blocks()
 	return (processes.ticker.playtime_elapsed >= 600 || admin_ended_all_grace_periods)
 

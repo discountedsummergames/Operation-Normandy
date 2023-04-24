@@ -24,8 +24,8 @@
 	faction_distribution_coeffs = list(GERMAN = 0.5, POLISH_INSURGENTS = 0.5)
 	battle_name = "Partisan Hunting"
 	songs = list(
-	 "Partisan's Song:1" = 'sound/music/partisans_song.ogg',
-	 "Bella Ciao:1" = 'sound/music/bella_ciao.ogg')
+		"Zamilska - Front:1" = 'sound/music/front.ogg',
+		)
 	meme = FALSE
 
 /obj/map_metadata/partisan/job_enabled_specialcheck(var/datum/job/J)

@@ -27,8 +27,7 @@
 	var/modded_num_of_prisoners3 = FALSE
 	faction_distribution_coeffs = list(JAPAN = 0.3, USA = 0.70)
 	songs = list(
-		"The Great Escape:1" = 'sound/music/the_great_escape.ogg',
-		"Bridge Over the River Kwai:1" = 'sound/music/bridge_over_river_kwai.ogg',
+		"MGS4 - Midnight Shadow:1" = 'sound/music/shadow.ogg'
 		)
 
 /obj/map_metadata/river_kwai/germans_can_cross_blocks()

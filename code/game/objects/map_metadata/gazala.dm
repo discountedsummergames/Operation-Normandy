@@ -22,7 +22,7 @@
 	front = "Western"
 	battle_name = "battle of the road to Gazala"
 	songs = list(
-		"Panzerlied:1" = 'sound/music/panzerlied.ogg')
+		"COD WAW - Main Theme:1" = 'sound/music/waw.ogg')
 	faction_distribution_coeffs = list(GERMAN = 0.5, USA = 0.5)
 	var/modded_num_of_prisoners3 = FALSE
 

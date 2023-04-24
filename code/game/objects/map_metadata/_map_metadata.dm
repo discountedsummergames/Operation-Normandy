@@ -40,11 +40,9 @@ var/global/obj/map_metadata/map = null
 		list(SOVIET, USA) = /area/prishtina/soviet)
 	var/list/ambience = list('sound/ambience/0Background1.wav','sound/ambience/0Background2.wav','sound/ambience/0Background3.wav','sound/ambience/0Background4.wav','sound/ambience/0Background5.wav','sound/ambience/0Background6.wav')
 	var/list/songs = list(
-		"Erika:1" = 'sound/music/ERIKA.ogg',
-		"Fallschirmjager Lied:1" = 'sound/music/Fallschirmjager_lied_German_paratrooper_song.ogg',
-		"Farewell of Slavianka:1" = 'sound/music/FarewellofSlavianka.ogg',
-		"Katyusha:1" = 'sound/music/katyusha.ogg',
-		"SS Marschiert in Feindesland:1" = 'sound/music/SSmarschiertinFeindesland.ogg',)
+		"Zamilska - Call:1" = 'sound/music/call.ogg',
+		"Zamilska - Enemy:1" = 'sound/music/enemy.ogg',
+		"Zamilska - Front:1" = 'sound/music/front.ogg',)
 
 	// stuff ported from removed game mode system
 	var/required_players = 2

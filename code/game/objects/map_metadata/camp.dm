@@ -27,7 +27,7 @@
 	var/modded_num_of_prisoners = FALSE
 	faction_distribution_coeffs = list(GERMAN = 0.3, SOVIET = 0.7)
 	songs = list(
-		"The Great Escape:1" = 'sound/music/the_great_escape.ogg'
+		"MGS4 - Midnight Shadow:1" = 'sound/music/shadow.ogg'
 		)
 
 /obj/map_metadata/camp/germans_can_cross_blocks()
