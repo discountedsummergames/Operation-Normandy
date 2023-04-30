@@ -432,13 +432,12 @@
 		fire_alert = max(fire_alert, TRUE)
 		if (status_flags & GODMODE)	return TRUE	//godmode
 		var/burn_dam = FALSE
-		switch(bodytemperature)
-			if (species.heat_level_1 to species.heat_level_2)
-				burn_dam = HEAT_DAMAGE_LEVEL_1
-			if (species.heat_level_2 to species.heat_level_3)
-				burn_dam = HEAT_DAMAGE_LEVEL_2
-			if (species.heat_level_3 to INFINITY)
-				burn_dam = HEAT_DAMAGE_LEVEL_3
+		if (bodytemperature >= species.heat_level_3)
+			burn_dam = HEAT_DAMAGE_LEVEL_3
+		else if (bodytemperature >= species.heat_level_2)
+			burn_dam = HEAT_DAMAGE_LEVEL_1
+		else
+			burn_dam = HEAT_DAMAGE_LEVEL_1
 		take_overall_damage(burn=burn_dam, used_weapon = "High Body Temperature")
 		fire_alert = max(fire_alert, 2)
 
@@ -448,13 +447,12 @@
 
 //		if (!istype(loc, /obj/machinery/atmospherics/unary/cryo_cell))
 		var/burn_dam = FALSE
-		switch(bodytemperature)
-			if (-INFINITY to species.cold_level_3)
-				burn_dam = COLD_DAMAGE_LEVEL_3
-			if (species.cold_level_3 to species.cold_level_2)
-				burn_dam = COLD_DAMAGE_LEVEL_2
-			if (species.cold_level_2 to species.cold_level_1)
-				burn_dam = COLD_DAMAGE_LEVEL_1
+		if (bodytemperature <= species.cold_level_3)
+			burn_dam = COLD_DAMAGE_LEVEL_3
+		else if (bodytemperature <= species.cold_level_2)
+			burn_dam = COLD_DAMAGE_LEVEL_2
+		else
+			burn_dam = COLD_DAMAGE_LEVEL_1
 		take_overall_damage(burn=burn_dam, used_weapon = "Low Body Temperature")
 		fire_alert = max(fire_alert, TRUE)
 
