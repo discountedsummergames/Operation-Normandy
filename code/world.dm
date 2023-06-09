@@ -288,16 +288,19 @@ var/world_topic_spam_protect_time = world.timeofday
 			processScheduler.stop() // will be started again after the serverswap occurs
 		..(reason)
 
+
 #define COLOR_LIGHT_SEPIA "#D4C6B8"
 /world/proc/roundabout() // yes i know this is dumb - kachnov
 	if (config.jojoreference || (map && istype(map, /obj/map_metadata/survival)))
 		world << sound('sound/misc/roundabout.ogg')
 		spawn (40)
+			global_colour_matrix = COLOR_LIGHT_SEPIA
 			for (var/client/client in clients)
 				client.color = COLOR_LIGHT_SEPIA
 				client.screen += tobecontinued
 				client.canmove = FALSE
-#undef COLOR_SEPIA
+		
+#undef COLOR_LIGHT_SEPIA
 /*
 /hook/startup/proc/loadMode()
 	world.load_mode()
