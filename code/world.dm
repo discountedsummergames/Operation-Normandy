@@ -286,9 +286,11 @@ var/world_topic_spam_protect_time = world.timeofday
 		sleep(sleeptime) // I think this is needed so C << link() doesn't fail
 		if (processScheduler) // just in case
 			processScheduler.stop() // will be started again after the serverswap occurs
+
+		processes.python.execute("endserver.py") // kill server to reboot with new .dmb (and map)
 		..(reason)
 
-
+	
 #define COLOR_LIGHT_SEPIA "#D4C6B8"
 /world/proc/roundabout() // yes i know this is dumb - kachnov
 	if (config.jojoreference || (map && istype(map, /obj/map_metadata/survival)))
@@ -299,8 +301,9 @@ var/world_topic_spam_protect_time = world.timeofday
 				client.color = COLOR_LIGHT_SEPIA
 				client.screen += tobecontinued
 				client.canmove = FALSE
-		
 #undef COLOR_LIGHT_SEPIA
+
+
 /*
 /hook/startup/proc/loadMode()
 	world.load_mode()
