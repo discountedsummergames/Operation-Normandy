@@ -38,7 +38,7 @@ def modify_dme_file(winner):
 if __name__ == "__main__":
     if len(sys.argv) != 2:
         
-        # Replace with proper logging that appears in-game or as appropriate
+        # Only viewable when called as standalone file
         print("Usage: python mapswap.py <winner>")
         sys.exit(1)
 
