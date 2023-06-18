@@ -5,7 +5,7 @@ import subprocess
 
 # Kill the actual game (WW13.dmb) so we can recompile it with the new map
 def kill_server():
-    command = "pkill -f WW13.dmb"
+    command = "sudo pkill -9 -f WW13.dmb"
     subprocess.run(command, shell=True)
 
 
